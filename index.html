@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -18,17 +27,114 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text"></div>
-            <p>UX/UI Designer</p>
-            <h1>Hi! I'm <span>Daniela</span><br>I will create a design that can give you value of your product</h1>
-            </div>
-            <div class="images">
+            <div class="container">
+                <div class="row1">
+                    <div class="header-text">
+                        <p>UX/UI Designer</p>
+                        <h1>Hi! I'm <span>Daniela</span><br>I will create a design that <br>can give you value of your product</h1>
+                        </div>
+                <div class="images">
                 <img src="images/Homepage.jpg" class="Homepage">
             </div>
 
         </div>
 
     </div>
-    
+
+    <!------------ about Me------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                        <img src="images/About_me.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I became a designer at the age of 18, I liked to paint and draw most of the time. I started my studies designer in 2012, focusing more on the digital part of my career for about 4 years. Simultaneously, I worked as a social communicator, which developed new skills such as public speaking, writing, and teamwork. Speaking a second language has been an important part of my career to expand my design knowledge and have more opportunities in the field. I get energy from exploring and creating, always hungry for the unknown. The design always makes me feel excited about not knowing what the results will be, but constantly discovering and adjusting for the better.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UX/UI</span><br>User Research<br>Designing Web/App interfaces<br>Prototyping</li>
+                                <li><span>TOOLS I KNOW</span><br>Figma<br>FigJam<br>Miro<br>Illustrator/Photoshop<br>Slack/Trello<br>Vs Code/GitHub<br>Google Drive<br>Zoom/Google Meets</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2012-2016</span><br>Graphic Designer/Communicator<br>RELAL-Lasallian Latin American Region</li>
+                                <li><span>2017-2022</span><br>Server/bartender<br>Olive Garden</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>UX/UI Design Bootcamp<br>University of Utah</li>
+                                <li><span>2017-2020</span><br>English Language<br>Us ling Institute/American One Institute</li>
+                                <li><span>2010-2013</span><br>Digital Graphic Design <br>CESDE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ Portfolio ------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/project1.jpg">
+                <div class="layer">
+                    <h3>Mobile App Case Study<br>“Travel PRO”</h3>
+                    <p>The first mobile design of a travel agency for frequent travelers.</p>
+                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project2.jpg">
+                <div class="layer">
+                    <h3>Mobile App Case Study<br>“MyDoctor”</h3>
+                    <p>The first mobile design of a health company for people seeking health care and wellness.</p>
+                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project3.jpg">
+                <div class="layer">
+                    <h3>Non-profit Government<br>Website Redesign</h3>
+                    <p>“Impact Mental Health” website/mobile-first redesign of a non-profit government agency for users looking for affordable mental health services.</p>
+                    <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tablinks = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+    }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classlist.add("active-tab");
+}
+
+</script>    
 </body>
 </html>
