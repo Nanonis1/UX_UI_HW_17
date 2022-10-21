@@ -66,17 +66,6 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.row1{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.images{
-    flex-basis: 35%;
-}
-
 
 .header-text{
     margin-top: 30%;
@@ -93,9 +82,19 @@ nav ul li a:hover::after{
     color: #FFB800;
 }
 
+.images{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    
+}
+
 .images img{
     width: 100%;
-    margin-top: 300px;
+    left: 50%;
+    bottom: 0;
     border-radius: 15px;
     position: absolute;
 
@@ -241,6 +240,28 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
+    font-size: 14px;
 
 }
+
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #FFB800;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
 
