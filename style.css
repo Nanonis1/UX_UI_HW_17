@@ -122,8 +122,10 @@ nav ul li a:hover::after{
 /*---------------About Me----------------*/
 
 #About{
-    padding: 10px 0;
+    padding: 100px 0;
     color: black;
+    text-align: left;
+    font-size: 36px;
     
 }
 
@@ -138,6 +140,11 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
+.about-col-2{
+    flex-basis: 35%;
+}
+
+
 .about-col-1 img{
     width: 100%;
     margin-top: 300px;
@@ -148,10 +155,16 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
     margin-top: 300px;
-    font-size: 20px;
-    
+
 
 }
+
+.about-col-2 p{
+    padding-top: 5%;
+    font-weight: normal;
+    font-size: 28px;
+}
+
 
 .tab-titles{
     display: flex;
@@ -284,3 +297,61 @@ nav ul li a:hover::after{
 }
 
 
+/* --------- Get in touch ----------*/
+
+
+#get-in-touch{
+    padding: 100px 0;
+    text-align: left;
+    font-size: 36px;
+
+}
+
+.get-in-touch-left{
+    flex-basis: 35%;
+   
+}
+
+.get-in-touch-right{
+    flex-basis: 35%;
+    display: inline-block;
+    margin-top: 35px;
+
+
+
+}
+
+.get-in-touch-left h3{
+    padding-top: 10%;
+    font-weight: normal;
+    font-size: 32px;
+    align-items: center;
+    list-style: none;
+
+}
+
+.get-in-touch-left p{
+    padding-top: 10%;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.get-in-touch-right h3{
+    display: inline-block;
+    padding-top: 20%;
+    font-weight: normal;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.get-in-touch-right span{
+    color: #FFB800
+}
+
+.get-in-touch-left p i{
+    color: #FFB800;
+    margin-right: 15px;
+    font-size: 25px;
+}
