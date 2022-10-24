@@ -10,15 +10,9 @@ body{
     color: black;
 }
 
-#header{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
 .container{
   padding: 10px 10%;
+  
 
 }
 
@@ -26,6 +20,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
     
 }
 
@@ -66,41 +61,65 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.main-content{
+    margin-top: 10px 0;
 
-.header-text{
-    margin-top: 30%;
-    font-size: 32px;
 }
 
-.header-text h1{
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.home-info{
+    padding-top: 60px;
+    flex-basis: 80%;
+    display: flexbox;
+    margin-left: 10%;
+}
+
+.home-info h1{
     font-size: 56px;
-    margin-top: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.home-info p{
+    font-size: 32px;
+    font-weight: normal;
+    padding-top: 30px;
+
 
 }
 
-.header-text h1 span{
+.home-info span{
     color: #FFB800;
 }
 
-.images{
-    width: 40%;
-    height: 100%;
+.home-section img{
+    height: 70%;
     position: absolute;
-    bottom: 0;
-    right: 100px;
+    border-radius: 500px;
     
-}
-
-.images img{
-    width: 100%;
-    left: 50%;
-    bottom: 0;
-    border-radius: 15px;
-    position: absolute;
 
 }
 
-*---------------About Me----------------*/
+.home-section{
+    display: flex;
+    margin-bottom: auto;
+    padding: 70px 10%;
+    padding-bottom: 200px;
+    align-items: center;
+    box-sizing: border-box;
+
+   
+}
+
+    
+
+/*---------------About Me----------------*/
 
 #About{
     padding: 10px 0;
