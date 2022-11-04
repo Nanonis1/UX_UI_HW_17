@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
@@ -11,12 +10,6 @@ body{
 }
 
 
-.container{
-  padding: 10px 5%;
-  /* background-color: grey; */
-  
-
-}
 
 nav{
     display: flex;
@@ -75,7 +68,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: green; */
+    background-color: green;
     
    
 }
@@ -91,16 +84,16 @@ nav ul li a:hover::after{
 }
 
 .home-info h1{
-    font-size: 56px;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: medium;
     padding-top: 30px;
     
 }
 
-.home-info p{
-    font-size: 32px;
-    font-weight: normal;
-    padding-top: 400px;
+.home-info h2{
+    font-size: 56px;
+    font-weight: bold;
+    padding-top: px;
 
 
 }
@@ -243,7 +236,7 @@ nav ul li a:hover::after{
 
 #portfolio{
     padding: 10px 0;
-    font-size: 36px;
+    font-size: px;
     padding: 60px 0;
     color: black;
     
@@ -340,14 +333,21 @@ nav ul li a:hover::after{
 
 
 #get-in-touch{
-    padding: 100px 0;
+    padding: 10px 0;
+    display: flex;
     text-align: left;
-    font-size: 36px;
+    background-color: blue;
+    
 
+}
+
+.container{
+    
 }
 
 .get-in-touch-left{
     flex-basis: 35%;
+ 
    
 }
 
